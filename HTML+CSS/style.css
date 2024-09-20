@@ -1,0 +1,158 @@
+p{
+    color: blue;
+    font-size: 20px;
+}
+h2{
+    font-size: 30px;
+}
+#current:hover{
+color: green;
+}
+p,h2{
+    font-family: sans-serif;
+}
+/* h3{
+    text-transform: uppercase;
+} */
+.uppercase{
+    text-transform: uppercase;
+}
+.cursive{
+    font-family: cursive;
+}
+li h4{
+    text-transform: uppercase;
+}
+#start{
+    color: chocolate;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+#outer-div1{
+    height: 200px;
+    width: 300px;
+    background-color: #0b0bda99;
+    /* rgba(25,126,200,1) ;*/
+    /* border-width: 4px 6px 8px 10px;
+    border-style: solid;
+    border-color: red; */
+    border: 6px solid red;
+    border-radius: 4px;
+    margin: 4px; 
+    padding: 5px;
+    position: relative;
+}
+#inner-div1{
+    height: 100px;
+    width: 150px;
+    background-color: cyan;
+}
+#inner-div2{
+    height: 100px;
+    width: 150px;
+    background-color: greenyellow;
+    /* position: relative; */
+    left: 20px;
+    top: 20px;
+    /* position:absolute; */
+    /* position: fixed; */
+    position: sticky;
+}
+#inner-div3{
+    height: 100px;
+    width: 150px;
+    background-color: orangered;
+}
+#outer-div2{
+    height: 200px;
+    width: 300px;
+    background-color: #0b0bda99;
+    /* rgba(25,126,200,1) ;*/
+    /* border-width: 4px 6px 8px 10px;
+    border-style: solid;
+    border-color: red; */
+    /* border: 6px solid red;
+    border-radius: 4px; */
+    
+}
+#sample-para{
+    /* border: 2px solid red; */
+    border-left: 4px solid red;
+}
+/* #logo-image{
+    height: 100vh;
+    width: 100vw;
+    background-image:"D:\PHOTOS\PICNIC 2K21\IMG_20210101_125700.jpg" ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px;
+    background-attachment: fixed;
+} */
+
+.widget{
+    border-top: 4px solid black;
+}
+.widget input{
+    display: block;
+    background-color: #f7f7f7;
+    margin-bottom: 15px;
+    padding: 4px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+button {
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.widget-title {
+    font-size: 1.8rem;
+}
+
+main{
+    width: 70%;
+    display: inline-block;
+}
+aside{
+    width: 21%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4%;
+}
+div{
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* for mobile view */
+
+@media screen and (min-width:600px) {
+    div{
+        width: 80%;
+    }
+}
+@media screen and (min-width:900px) {
+    div{
+        width: 60%;
+    }
+}
+
+/* for desktop view */
+
+/* @media screen and (max-width:900px) {
+    div{
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px) {
+    div{
+        width: 100%;
+    }
+} */

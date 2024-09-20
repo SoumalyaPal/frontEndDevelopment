@@ -1,0 +1,59 @@
+@keyframes changeShape{
+    0%{
+        border-radius: 0%;
+    } 
+    25%{
+        border-radius: 12.5%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    100%{
+        border-radius: 50%;
+    }
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    } 
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reduceSize{
+    from{
+        height: 200px;
+        width: 200px;
+    } 
+    to{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+#gradient{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: aquamarine;
+    /* transform: rotate(100deg); */
+    /* transform: scale(1.5); */
+    /* transform: translate(100px);
+    transition: height 1s ease-in-out 0.5s; */
+    /* transition: 1s ease-in-out; */
+    /* animation: changeShape 1s ease-in-out 4; */
+    animation-name: changeShape, rotate, reduceSize;
+    animation-duration: 1s,1s,1s;
+    animation-iteration-count: infinite,infinite,infinite;
+    animation-direction: alternate,alternate,alternate;
+
+}
+/* #gradient:hover{
+    transform: scale(1.5) translate(150px);
+    
+} */

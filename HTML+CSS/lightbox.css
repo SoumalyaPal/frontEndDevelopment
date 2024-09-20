@@ -1,0 +1,33 @@
+#lightbox{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 2s ease-in-out;
+}
+#lightbox:target{
+    height: 30%;
+    width: 30%;
+    top: 25%;
+    left: 25%;
+    background-color: lightgrey;
+}
+.styled-first-letter::first-line{
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+h2::before{
+    content: 'Before ';
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+h2::after{
+    content: ' After ';
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}

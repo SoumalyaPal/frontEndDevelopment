@@ -1,0 +1,225 @@
+body{
+    margin: 0px;
+}
+
+/* body header */
+
+#body-header{
+    height: 60vh;
+    opacity: 0.8;
+    background-image: url(C:/Users/SOUMALYA/OneDrive/Desktop/_DSC0461.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* horizontal list */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+.horizontal-list li a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s 
+    /* border-bottom 4s; */ 
+}
+.horizontal-list li a:hover{
+    color: red;
+    border-bottom: 1px solid white;
+}
+.text-center{
+    text-align: center;
+    
+}
+
+/* name and social icon */
+
+#name-social-container{
+    margin-top: 20vh;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.social-icons li a img{
+    padding: 10px;
+    font-size: 1rem;
+    color: red;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: lightgrey;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+section:target{
+    background-color: aqua;
+}
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size: 40px;
+    color: rgb(93, 93, 239);
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* about */
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* skill section */
+
+.skill-display{
+    width: 70%;
+    /* height: 100px;
+    border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    /* border: 2px solid black; */
+}
+.skill-progress>div{
+    border-radius: 10px 0px 0px 10px;
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
+/* timeline */
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    margin: 5px;
+    left: 5%;
+    min-height: 150px;
+    border: 2px solid black;
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: red;
+    top: 25%;
+    right: -12%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: red;
+    top: 25%;
+    left: -12%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed lightsalmon;
+    top: 10%;
+    left: 50%;
+}
+
+@media screen and (max-width:600px) {
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 12% !important;
+        top: 80%;
+    }
+    .timeline-box::after{
+        left: -12% !important;
+    }
+    /* .timeline-box:nth-child(2n){
+        left: 12%;
+    } */
+    /* .timeline-box:nth-child(2n)::after{
+        left: -12%;
+    }
+    .timeline-box:nth-child(2n+1)::after{
+        left: -12%;
+    } */
+} 
+
+.timeline-traveller{
+    position: sticky;
+    top: 5%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+/* common margin classes */
+.mb75px{
+    margin-bottom: 75px;
+}
+.text-highlight{
+    color: blue;
+    font-weight: 600;
+}
+.mb-blue{
+    background-color: blue;
+}
+
+/* percentage classes */
+.eight-five-percent{
+    width: 85%;
+    height: inherit;
+}
